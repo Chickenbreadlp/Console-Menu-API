@@ -1,8 +1,9 @@
 # Console Menu API
 A Console Menu API for C#.NET
+This might not be the most efficent code, but it gets the job done ^^
 
 ## Installation
-To istall the API, you add it as a Reference in VS and then you can use this API.
+To install the API, you add the compiled .dll as a Reference in VS and then you can use this API in the MenuAPI namespace.
 
 ## Usage
 The API Uses the MenuAPI Namespace and has the following Objects:
