@@ -1,2 +1,2 @@
-# C-Console-Menu-API
+# C# Console Menu API
 A Console Menu API for C#
