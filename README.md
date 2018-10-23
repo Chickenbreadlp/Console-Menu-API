@@ -9,13 +9,13 @@ The API Uses the MenuAPI Namespace and has the following Objects:
 - ConsoleMenu
   - The default Console Menu. All Entries are listed under each other
 - ConsoleMenuRowed
-  - Modifies the Console Meu to show up in multiple rows. The row-count is calculated dynamically and the Hight of the menu is set by you.
+  - Modifies the Console Menu to show up in multiple rows. The row-count is calculated dynamically depending on how many are needed due to the maximum hight and amount of entries
 
 ### ConsoleMenu
 Constructor:
 ```
-	ConsoleMenu(string[] entries, char selector = '>', string seperator = "")
-	ConsoleMenu(string[] entries, string title, char selector = '>', string seperator = "")
+ConsoleMenu(string[] entries, char selector = '>', string seperator = "")
+ConsoleMenu(string[] entries, string title, char selector = '>', string seperator = "")
 ```
 - entries
   - Is an array of all menu options, that should show up.
@@ -28,7 +28,7 @@ Constructor:
 
 Other public functions:
 ```
-	int Show()
+int Show()
 ```
 - Show()
   - Shows the menu and halts the current thread, until the user presses Enter or Escape
@@ -38,8 +38,8 @@ Other public functions:
 ### ConsoleMenuRowed
 Constructor:
 ```
-	ConsoleMenuRowed(string[] entries, int lines, int seperation = 2, char selector = '>', string seperator = "")
-	ConsoleMenuRowed(string[] entries, string title, int lines, int seperation = 2, char selector = '>', string seperator = "")
+ConsoleMenuRowed(string[] entries, int lines, int seperation = 2, char selector = '>', string seperator = "")
+ConsoleMenuRowed(string[] entries, string title, int lines, int seperation = 2, char selector = '>', string seperator = "")
 ```
 - entries
   - Is an array of all menu options, that should show up.
@@ -56,9 +56,9 @@ Constructor:
 
 Other public functions:
 ```
-	int Show()
+int Show()
 ```
 - Show()
-  - Shows the menu and halts the current thread, until the user presses Enter or Escape
+  - Shows the menu in multiple rows and halts the current thread, until the user presses Enter or Escape
   - returns whatever entry the user selected or -1 if the user pressed Escape.
     - returned Index is the Index of the entries array **without** seperators
